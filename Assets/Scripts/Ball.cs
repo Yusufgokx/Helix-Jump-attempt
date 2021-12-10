@@ -31,11 +31,11 @@ public class Ball : MonoBehaviour
         string materialName = other.gameObject.GetComponent<MeshRenderer>().material.name;
         Debug.Log("Material Adý : " + materialName);
 
-       /* if(materialName== "Safe Color (Instance)")
+        if(materialName== "Safe Color (Instance)")
         {
             //puan alacak
 
-        }*/
+        }
         if(materialName=="Unsafe Color (Instance)")
         {
             //Bolum yenýden baslayacak
