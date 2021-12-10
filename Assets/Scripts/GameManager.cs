@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     private int score;
+
     public Text scoreText;
 
     void Start()
@@ -22,6 +23,7 @@ public class GameManager : MonoBehaviour
     public void GameScore(int ringScore)
     {
         score +=ringScore;
+        
         scoreText.text = score.ToString();
     }
     public void RestartGame()
