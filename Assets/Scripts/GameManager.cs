@@ -31,4 +31,10 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
     }
+    void LoadHighScoreLevel()
+    {
+
+        SceneManager.LoadScene("Level_2");
+    }
 }
+  

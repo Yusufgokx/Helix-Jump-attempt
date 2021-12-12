@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Ball : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Ball : MonoBehaviour
     void Start()
     {
         gm = GameObject.FindObjectOfType<GameManager>();
+        
     }
 
 
@@ -21,6 +23,7 @@ public class Ball : MonoBehaviour
     {
 
     }
+   
 
     private void OnCollisionEnter(Collision other)
     {
@@ -44,9 +47,12 @@ public class Ball : MonoBehaviour
         }
         else if (materialName== "Last Ring (Instance)")
         {
-            Debug.Log("Next Level");
-            // yený level
+            SceneManager.LoadScene("Level_2");
+
         }
+    
+        
+
 
     }
     

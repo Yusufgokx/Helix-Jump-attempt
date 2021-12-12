@@ -6,6 +6,7 @@ public class Ring : MonoBehaviour
 {
     public Transform ball;
     private GameManager gm;
+
     void Start()
     {
         gm = GameObject.FindObjectOfType<GameManager>();
